@@ -1,0 +1,154 @@
+@font-face {
+    font-family: MontserratItalic;
+    src: url("../fonts/Montserrat-Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url("../fonts/Montserrat-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MontserratLightItalic;
+    src: url("../fonts/Montserrat-LightItalic.otf") format("opentype");
+}
+
+body{
+	background-color:#f6f6f6;
+}
+
+#main{
+	background-image:url(../images/maxresdefault.jpg); 
+	min-height:760px; 
+	background-size:100% auto;
+	background-repeat:no-repeat;
+}
+
+#logo{
+	height: 552px;
+	background-color: yellow;
+}
+
+h4{
+	font-family: MontserratItalic;
+	font-size: 22px;
+	font-weight: bold;
+	display: inline;
+}
+
+h2{
+	font-family: MontserratLightItalic;
+	font-size: 25px;
+	display: inline;
+}
+
+small{
+	font-family: MontserratLight;
+	font-size: 11px;
+}
+
+.galeria-item{
+	max-width:400px;
+	max-height: 280px;
+	margin:auto;
+}
+
+button{
+	background-color: #f6f6f6;
+	border:1px solid #000;
+	padding: 9px 30px 9px 30px;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: #000;
+	color:#fff;
+	border:1px solid #000;
+	padding: 9px 30px 9px 30px;
+	cursor: pointer;
+}
+
+.suscribete-medio{
+	background-color: #fff;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#suscribete{
+	background-color: #f6f6f6;
+	border: 1px solid #f6f6f6;
+	width: 350px;
+	padding: 5px 0px 5px 15px;
+	margin-right: 10px;
+	height: 45px;
+}
+
+#suscribete_2{
+	background-color: #f6f6f6;
+	border: 1px solid #f6f6f6;
+	width: 750px;
+	padding: 5px 0px 5px 15px;
+	margin-right: 10px;
+	height: 45px;
+}
+
+.p_condiciones{
+	font-family: MontserratLight;
+	font-size: 11px;
+	padding-top: 30px;
+}
+
+.footer-suscribete{
+	background-color: #fff;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.p_suscribete{
+	font-family: MontserratLight;
+	font-size: 14px;
+	padding-top: 50px;
+}
+
+.footer{
+	background-color: #444040;
+	min-height: 50px;
+}
+
+a{
+	font-family: MontserratLight;
+	font-size: 14px;
+	color:#fff;
+}
+
+a:hover{
+	font-family: MontserratLight;
+	font-size: 14px;
+	color:#fff;
+}
+
+@media only screen and (max-width: 767px) {
+	.galeria-item{
+		max-width:100%;
+		max-height: 100%;
+	}
+
+	#suscribete{
+		background-color: #f6f6f6;
+		border: 1px solid #f6f6f6;
+		width: 250px;
+		padding: 5px 0px 5px 15px;
+		margin-right: 10px;
+		height: 45px;
+	}
+
+	#suscribete_2{
+		background-color: #f6f6f6;
+		border: 1px solid #f6f6f6;
+		width: 250px;
+		padding: 5px 0px 5px 15px;
+		margin-right: 10px;
+		height: 45px;
+	}
+}
