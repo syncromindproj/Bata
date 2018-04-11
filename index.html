@@ -5,15 +5,101 @@
 	<title>Bata</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="container-fluid" id="main">
-		<div class="row">
-			<div class="col-md-12">
 
+	<div class="header-container">
+		<div class="video-container">
+			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/Bed-Phone.jpg">
+				<source src="assets/Bed-Phone.mp4" type="video/mp4" />
+				<source src="assets/Bed-Phone.webm" type="video/webm" />
+				<source src="assets/Bed-Phone.ogv" type="video/ogg" />
+			</video>
+		</div>
+		<div class="container" id="main">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="main-logo">
+						<img class="img-fluid" src="images/logo_bata.png">
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="media-menu">
+						<div class="media-option">
+							<a href="#">
+								<i id="player_pause" class="fa fa-pause fa-2x icon-red"></i>
+								<i id="player_play" style="display:none;" class="fa fa-play fa-2x icon-red"></i>
+							</a>
+						</div>
+						<div class="media-option">
+							<a href="#">
+								<i id="volume_player" data-status="off" class="fa fa-volume-off fa-2x icon-red"></i>
+							</a>
+						</div>
+						<div class="media-option">
+							<a href="#">
+								<i class="fa fa-facebook-f fa-2x icon-red"></i>
+							</a>
+						</div>
+						<div class="media-option">
+							<a href="#">
+								<i class="fa fa-instagram fa-2x icon-red"></i>
+							</a>
+						</div>
+						<div class="media-option">
+							<a href="#">
+								<i class="fa fa-youtube fa-2x icon-red"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="menu">
+						<!--label for="toggle">&#9776;</label>
+						<input type="checkbox" id="toggle"-->
+						<ul id="main_menu">
+							<li><a href="#" id="looks">LOOKS</a></li>
+							<li><a href="#dama">DAMA</a></li>
+							<li><a href="#caballero">CABALLERO</a></li>
+							<li><a href="#div_suscribete">SUSCRÍBETE</a></li>
+							<li><a href="#">ENCUÉNTRANOS</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="header-container-cell">
+		<div class="container" id="main">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="main-logo">
+						
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="menu">
+						<!--label for="toggle">&#9776;</label>
+						<input type="checkbox" id="toggle"-->
+						<ul id="main_menu">
+							<li><a href="#" id="looks">LOOKS</a></li>
+							<li><a href="#dama">DAMA</a></li>
+							<li><a href="#caballero">CABALLERO</a></li>
+							<li><a href="#div_suscribete">SUSCRÍBETE</a></li>
+							<li><a href="#">ENCUÉNTRANOS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div class="container-fluid" style="background-color:#fff;">
 		<div class="row" style="height:552px;">
 	        <div class="col-md-12 align-self-center text-center">
@@ -21,21 +107,23 @@
 	        </div>
 	    </div>
 	</div>
-	<div class="container-fluid" style="background-image:url(images/back_damas.jpg); height:545px; background-size:100% auto;background-repeat:no-repeat;">
-		<div class="row-fluid">
-			<div class="col-md-12">
-				
-			</div>
-		</div>
-	</div>
-	<div class="container" style="background-color:#f6f6f6; padding-top:90px; padding-bottom:50px; height:auto;">
+
+	<img class="img-fluid" src="images/back_damas.jpg">
+
+	<div class="container" id="lista-productos">
 		<div class="row text-center">
 			<div class="col-md-4">
 				<div class="row">
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Roxie</h4><br>
-							<small>S/. 129.90</small>			
+							<small>S/. 129.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_blanco.png" /></a>
+								<a href=""><img src="assets/btn_rosado.png" /></a>
+								<a href=""><img src="assets/btn_flores.png" /></a>
+							</div>		
 						</div>
 						<img class="img-fluid" src="images/559-0980_1.JPG">
 					</div>
@@ -47,7 +135,11 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Randy</h4><br>
-							<small>S/. 159.90</small>			
+							<small>S/. 159.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_rosado.png" /></a>
+							</div>			
 						</div>
 						<img class="img-fluid" src="images/559-5901_1.jpg">
 					</div>
@@ -58,20 +150,29 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Reyna</h4><br>
-							<small>S/. 109.90</small>			
+							<small>S/. 109.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_celeste.png" /></a>
+							</div>				
 						</div>
 						<img class="img-fluid" src="images/741-0907_1.jpg">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row text-center" style="padding-top:110px;">
+		<div class="row text-center fila-productos">
 			<div class="col-md-4">
 				<div class="row">
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Rita</h4><br>
-							<small>S/. 109.90</small>			
+							<small>S/. 109.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_rosado.png" /></a>
+								<a href=""><img src="assets/btn_rosa_claro.png" /></a>
+							</div>				
 						</div>
 						<img class="img-fluid" src="images/551-5910_1.jpg">
 					</div>
@@ -83,7 +184,12 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Regina</h4><br>
-							<small>S/. 109.90</small>			
+							<small>S/. 109.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_rosado.png" /></a>
+								<a href=""><img src="assets/btn_rojo.png" /></a>
+							</div>				
 						</div>
 						<img class="img-fluid" src="images/741-6900_1.jpg">
 					</div>
@@ -94,14 +200,18 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Renata</h4><br>
-							<small>S/. 129.90</small>			
+							<small>S/. 129.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_amarillo.png" /></a>
+							</div>				
 						</div>
 						<img class="img-fluid" src="images/551-8999_1.jpg">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row text-center" style="padding-top:150px;">
+		<div class="row text-center fila-productos">
 			<div class="col-md-12">
 				<button>VER MAS</button>
 			</div>
@@ -115,23 +225,22 @@
 			</div>
 		</div>
 	</div>		
-	
-	<div class="container-fluid" style="background-image:url(images/back_caballeros.jpg); height:545px; background-size:100% auto;background-repeat:no-repeat;">
-		<div class="row-fluid">
-			<div class="col-md-12">
-				
-			</div>
-		</div>
-	</div>
 
-	<div class="container" style="background-color:#f6f6f6; padding-top:90px; padding-bottom:50px; height:auto;">
+	<img class="img-fluid" src="images/back_caballeros.jpg">
+	
+	<div class="container" id="lista-productos">
 		<div class="row text-center">
 			<div class="col-md-4">
 				<div class="row">
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Lucas</h4><br>
-							<small>S/. 169.90</small>			
+							<small>S/. 169.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_gris_claro.png" /></a>
+								<a href=""><img src="assets/btn_azul.png" /></a>
+							</div>				
 						</div>
 						<img class="img-fluid" src="images/8512962_1.jpg">
 					</div>
@@ -143,7 +252,11 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Abel</h4><br>
-							<small>S/. 139.90</small>			
+							<small>S/. 139.90</small>	
+							<div class="colores">
+								<a href=""><img src="assets/btn_marron.png" /></a>
+								<a href=""><img src="assets/btn_azul.png" /></a>
+							</div>				
 						</div>
 						<img class="img-fluid" src="images/8513973_1.jpg">
 					</div>
@@ -154,20 +267,29 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Anthony</h4><br>
-							<small>S/. 229.90</small>			
+							<small>S/. 229.90</small>		
+							<div class="colores">
+								<a href=""><img src="assets/btn_azul.png" /></a>
+								<a href=""><img src="assets/btn_cafe.png" /></a>
+								<a href=""><img src="assets/btn_crema.png" /></a>
+							</div>			
 						</div>
 						<img class="img-fluid" src="images/8569986_1.jpg">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row text-center" style="padding-top:110px;">
+		<div class="row text-center fila-productos">
 			<div class="col-md-4">
 				<div class="row">
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Deco</h4><br>
-							<small>S/. 189.90</small>			
+							<small>S/. 189.90</small>
+							<div class="colores">
+								<a href=""><img src="assets/btn_gris.png" /></a>
+								<a href=""><img src="assets/btn_marron.png" /></a>
+							</div>					
 						</div>
 						<img class="img-fluid" src="images/8016997_1.jpg">
 					</div>
@@ -179,7 +301,10 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Oakville</h4><br>
-							<small>S/. 139.90</small>			
+							<small>S/. 139.90</small>
+							<div class="colores">
+								<a href=""><img src="assets/btn_marron.png" /></a>
+							</div>					
 						</div>
 						<img class="img-fluid" src="images/8512987_1.jpg">
 					</div>
@@ -190,7 +315,11 @@
 					<div class="col-md-12 galeria-item">
 						<div style="text-align:right;">
 							<h4>Quebec</h4><br>
-							<small>S/. 139.90</small>			
+							<small>S/. 139.90</small>		
+							<div class="colores">
+								<a href=""><img src="assets/btn_marron.png" /></a>
+								<a href=""><img src="assets/btn_azul.png" /></a>
+							</div>			
 						</div>
 						<img class="img-fluid" src="images/1019785_1.JPG">
 					</div>
@@ -204,7 +333,7 @@
 		</div>
 	</div>
 	
-	<div class="container-fluid footer-suscribete">
+	<div class="container-fluid footer-suscribete" id="div_suscribete">
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<h2>SUSCRÍBETE</h2>
@@ -234,5 +363,114 @@ y a las novedades de la nueva colección Bata Red.</p>
 			</div>
 		</div>
 	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	
+	      	<div class="grid">
+			  <div class="grid-sizer"></div>
+			  
+			  <div class="grid-item"><img src="images/mosaico/1.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/2.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/3.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/4.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/5.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/6.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/7.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/8.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/9.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/10.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/11.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/12.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/13.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/14.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/15.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/16.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/17.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/18.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/19.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/20.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/21.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/22.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/23.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/24.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/25.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/26.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/27.jpg" /></div>
+			  <div class="grid-item"><img src="images/mosaico/28.jpg" /></div>
+
+	      	</div>
+			
+	    </div>
+	  </div>
+	</div>
+
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
+	<script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+	<script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
+	<script>
+		$("document").ready(function(){
+			$("#looks").click(function(){
+				$('#exampleModal').modal('show');
+				//alert("dsfsdf");
+			});
+
+			$('#exampleModal').on( 'shown.bs.modal', function() {
+				var $grid = $('.grid').masonry({
+				  itemSelector: '.grid-item',
+				  percentPosition: true,
+				  columnWidth: '.grid-sizer'
+				});
+				// layout Masonry after each image loads
+				$grid.imagesLoaded().progress( function() {
+				  $grid.masonry('layout');
+				});  
+			});
+
+			
+			
+			$("#player_pause").click(function(data){
+				var vid = document.getElementById("main_video");
+
+				$("#player_pause").css("display", "none");
+				$("#player_play").css("display", "inline");
+				vid.pause();
+			});
+
+			$("#player_play").click(function(data){
+				var vid = document.getElementById("main_video");
+
+				$("#player_pause").css("display", "inline");
+				$("#player_play").css("display", "none");
+				vid.play();
+			});
+
+			$("#volume_player").click(function(data){
+				var status = $(this).data("status"); 
+				var vid = document.getElementById("main_video");
+
+				if (status=="off") {
+					$("#volume_player").attr("class", "fa fa-volume-up fa-2x icon-red");
+					$("#volume_player").data("status", "on"); 
+					$("#main_video").prop('muted', false); 
+				}
+
+				if (status=="on") {
+					$("#volume_player").attr("class", "fa fa-volume-off fa-2x icon-red");
+					$("#volume_player").data("status", "off"); 
+					$("#main_video").prop('muted', true); 
+				}
+			});
+		});
+	</script>
 </body>
 </html>
