@@ -233,35 +233,46 @@ a:hover{
 	color:#fff;
 }
 
-/* ---- grid ---- */
 
-.grid {
-  width:100%;
-  background-color: #8B151F;
-}
+/*----MASONRY----*/
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-sizer,
-.grid-item {
-  width: 33.333%;
-}
-
-.grid-item {
-  float: left;
-}
-
-.grid-item img {
-  display: block;
+img {
   max-width: 100%;
+  vertical-align: bottom;
 }
+
+.masonry.gutterless {
+  -moz-column-gap: 0;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+}
+.masonry.gutterless .brick {
+  margin-bottom: 0;
+}
+
+.modal-body{
+	padding: 0px !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+	background-color: #8B151F;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+
+/*----MASONRY----*/
+
 
 .modal-lg {
     max-width: 80% !important;
@@ -290,6 +301,20 @@ a:hover{
 #exampleModal{
 	overflow-y:auto !important;
 }
+
+
+.masonry { /* Masonry container */
+    column-count: 4;
+    column-gap: 1em;
+}
+
+.item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 10%;
+}
+
 
 @media only screen and (max-width: 767px) {
 	.fila-productos{
