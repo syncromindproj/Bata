@@ -18,6 +18,10 @@
     src: url("../fonts/Montserrat-SemiBold.otf") format("opentype");
 }
 
+.slicknav_menu {
+	display:none;
+}
+
 .header-container{
 	width:100%;
 	height: auto;
@@ -300,7 +304,7 @@ img {
 }
 
 
-#lista-productos{
+.lista-productos{
 	background-color:#f6f6f6; 
 	padding-top:90px; 
 	padding-bottom:50px; 
@@ -342,6 +346,22 @@ img {
 }
 
 @media only screen and (max-width: 1240px) {
+
+	/* #menu is the original menu */
+	#main_menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+		background-color: #DF0209 !important;
+		padding: 20px !important;
+	}
+
+	.slicknav_btn{
+		background-color: #DF0209 !important;
+	}
+
 	.cover-dama{
 		background-image: url("../images/bata_red_dama_.jpg");
 		background-attachment: scroll;
@@ -389,7 +409,7 @@ img {
 		padding-bottom: 15px !important;
 	}
 
-	#lista-productos{
+	.lista-productos{
 		background-color:#f6f6f6; 
 		padding-top:20px; 
 		padding-bottom:50px; 
