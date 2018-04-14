@@ -20,7 +20,7 @@
 
 .header-container{
 	width:100%;
-	height: 760px;
+	height: auto;
 	border-left: none;
 	border-right:none;
 	position: relative;
@@ -67,7 +67,7 @@ li{
 }
 
 .menu{
-	padding-top: 195px;
+	padding-top: 165px;
 	padding-left: 80px;
 }
 
@@ -125,7 +125,7 @@ li{
 }
 
 .main-logo{
-	padding-top: 265px;
+	padding-top: 235px;
 }
 
 #logo{
@@ -253,6 +253,24 @@ img {
 	padding: 0px !important;
 }
 
+.cover-dama{
+	background-image: url("../images/bata_red_dama_.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.cover-caballero{
+	background-image: url("../images/bata_red_caballeros_.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
 @media only screen and (min-width: 1024px) {
   .masonry {
     -moz-column-count: 4;
@@ -314,8 +332,55 @@ img {
     width: 10%;
 }
 
+#texto-animado-fila{
+	height:452px;
+}
+
+.img-caballero, 
+.img-dama{
+	display: none;
+}
+
+@media only screen and (max-width: 1240px) {
+	.cover-dama{
+		background-image: url("../images/bata_red_dama_.jpg");
+		background-attachment: scroll;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    min-height: 500px;
+	}
+
+	.cover-caballero, 
+	.cover-dama{
+		display: none;
+	}
+
+	.img-caballero,
+	.img-dama
+	{
+		display: block;
+	}
+}
 
 @media only screen and (max-width: 767px) {
+	#texto-animado-fila{
+		height:152px;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	#main{
+		/*background-image:url(../images/maxresdefault.jpg); */
+		min-height: 200px;
+	}
+
+	.media-menu{
+		display: none;
+	}
+
 	.fila-productos{
 		padding-top:15px;
 	}
@@ -331,7 +396,7 @@ img {
 		height:auto;
 	}
 
-	.header-container-cell{
+	/*.header-container-cell{
 		display: block;
 		width:100%;
 		height: 760px;
@@ -344,7 +409,7 @@ img {
 
 	.header-container{
 		display: none;
-	}
+	}*/
 
 	.galeria-item{
 		max-width:100%;
