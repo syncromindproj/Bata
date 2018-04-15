@@ -18,9 +18,27 @@
     src: url("../fonts/Montserrat-SemiBold.otf") format("opentype");
 }
 
-.slicknav_menu {
-	display:none;
+.fancybox-content{
+	background-color: rgb(0,0,0,0.5) !important;
 }
+
+.video-container-mobile{
+	display: none;
+}
+
+#contenido-menu, #contenido-tiendas{
+	background-color: rgb(0,0,0,0.5) !important;
+	color:#fff;
+}
+
+#main_menu_light li{
+	display: block !important;
+	border-bottom: 1px solid #666;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
 
 .header-container{
 	width:100%;
@@ -81,8 +99,14 @@ li{
 	padding-right: 20px;
 }
 
+.responsive-menu{
+	display: none;
+}
+
+
+
 .media-menu{
-	padding-top: 100px;
+	padding-top: 95px;
 	padding-left: 300px;
 }
 
@@ -275,6 +299,13 @@ img {
     min-height: 1080px;
 }
 
+.txt_animado {
+	font-family: MontserratLight;
+	font-size: 45px !important;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
 @media only screen and (min-width: 1024px) {
   .masonry {
     -moz-column-count: 4;
@@ -296,7 +327,7 @@ img {
 
 
 .modal-lg {
-    max-width: 80% !important;
+    max-width: 100% !important;
 }
 
 .header-container-cell{
@@ -346,22 +377,6 @@ img {
 }
 
 @media only screen and (max-width: 1240px) {
-
-	/* #menu is the original menu */
-	#main_menu {
-		display:none;
-	}
-	
-	.slicknav_menu {
-		display:block;
-		background-color: #DF0209 !important;
-		padding: 20px !important;
-	}
-
-	.slicknav_btn{
-		background-color: #DF0209 !important;
-	}
-
 	.cover-dama{
 		background-image: url("../images/bata_red_dama_.jpg");
 		background-attachment: scroll;
@@ -383,9 +398,72 @@ img {
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.media-menu, .menu{
+		display: none;
+	}
+
+	.menu{
+		text-align: center;
+		width: 100%;
+		height: 200px;
+		padding-top: 0px;
+	}
+
+	.main-logo{
+		padding-top: 245px;
+	}	
+
+	.responsive-menu{
+		display: block;
+		float: right;
+	}
+
+
+}
+
 @media only screen and (max-width: 767px) {
+	.video-container-mobile{
+		display: block;
+		position: absolute;
+		top:0%;
+		left:0%;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+
+
+	.video-container{
+		display: none;
+	}
+
+
+	#logo_animado{
+		width: 40%;
+	}
+
+	.img-dama{
+		/*margin-top: 50px;*/
+	}
+
+	#texsto-animado-fila{
+		display: none;
+	}
+
+	.responsive-menu{
+		display: block;
+		float: right;
+	}
+
 	#texto-animado-fila{
-		height:152px;
+		height:300px;
+	}
+
+	.txt_animado {
+		font-family: MontserratLight;
+		font-size: 25px !important;
+		padding-top: 10px;
 	}
 
 	.menu{
@@ -467,7 +545,7 @@ img {
 	}
 
 	.main-logo{
-		padding-top: 65px;
+		display: none;
 	}	
 	
 }

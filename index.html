@@ -4,29 +4,89 @@
 	<meta charset="UTF-8">
 	<title>Bata</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-	<link rel="stylesheet" href="css/slicknav.min.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 </head>
 <body>
-	
+
 	<div class="header-container">
 		<div class="video-container">
-			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/video.jpg">
-				<source src="assets/bata.mp4" type="video/mp4" />
+			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/video2.jpg">
+				<source src="assets/video.mp4" type="video/mp4" />
 				<source src="assets/Bed-Phone.webm" type="video/webm" />
 				<source src="assets/Bed-Phone.ogv" type="video/ogg" />
 			</video>
 		</div>
+		<div class="video-container-mobile">
+			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/video2.jpg">
+			</video>
+		</div>
 		<div class="container" id="main">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="responsive-menu">
+						<a data-fancybox data-src="#contenido-menu" href="javascript:;"><i id="responsive-icon" class="fa fa-bars fa-2x" style="color:#fff;"></i></a>
+						<div style="display:none;"  id="contenido-menu">
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<img class="img-fluid" width="50%" src="images/logo_bata.png">		
+								</div>
+							</div>
+							
+							<ul id="main_menu_light">
+								<li><a href="javascript:muestraLooks();" id="looks">LOOKS</a></li>
+								<li><a href="javascript:cambiar('dama');">DAMA</a></li>
+								<li><a href="javascript:cambiar('caballero');">CABALLERO</a></li>
+								<li><a href="#div_suscribete">SUSCRÍBETE</a></li>
+								<li>
+									<a data-fancybox data-src="#contenido-tiendas" href="javascript:;">ENCUÉNTRANOS</a>
+									<div style="display:none;"  id="contenido-tiendas">
+										<h2 style="text-align:center;">Bata Red: Tiendas disponibles</h2>
+										<ul id="main_menu_light">
+											<li>B JOCKEY PLAZA: Av. Javier Prado Este 4200 Tda 110 A9/B, Surco- C.C. Jockey Plaza</li>
+											<li>B PRIMAVERA: Av. Angamos Este 2681 Int L 126 CC Real Plaza Primavera - San Borja</li>
+											<li>B MARSANO: Av. Angamos Nº 1803, local LC 37 - Surquillo</li>
+											<li>B1 MIRAFLORES: Av. Larco 662 – Miraflores</li>
+											<li>B5 MIRAFLORES: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
+											<li>B10 AREQUIPA: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
+											<li>B2 LA MOLINA: Av. La Molina 860- La Molina</li>
+											<li>B WOMAN MALL DEL SUR: C.C. Mall Del Sur, Av. Los Lirios N° 301, Local Lcs-1162, 1er. Nivel </li>
+											<li>B WOMAN BELLAVISTA: C.C. Mall Plaza Bellavista, Av. Oscar R. Benavides Nº 3866 Lc: A-1027b y A-1029</li>
+											<li>B CHORRILLOS: Av. Paseo de la República s/n Tda. 129-131-133, Chorrillos CC Plaza Lima Sur Shopping Center</li>
+											<li>B MEGAPLAZA: Av. Alfredo Mendiola 3698 y Av. Industrial 3513 a 3519, Int L-20-21, C.C. Cono Norte Mega Plaza</li>
+											<li>B1 INDEPENDENCIA: Av. Alfredo Mendiola Nº 1400 Locales 106/108/110 CC Plaza Norte</li>
+											<li>B2 SANTA ANITA: Av. Carretera Central 111 LC B-1022 y B-1024 primer nivel Mall Aventura Plaza Santa Anita</li>
+											<li>BATA MALL DEL SUR: Av. Los Lirios 301, Locales LCS 2068-2070, C.C. Mall Del Sur –</li>
+											<li>B2 SAN MIGUEL: CC Plaza San Miguel Tda 59 Av. La Marina Cdra 20 - San Miguel</li>
+											<li>B2 CHORRILLOS: Av. Prol. Paseo de la República s/n Int LC 230-232 CC Plaza Lima Sur – Chorrillos</li>
+											<li>B CENTRO CIVICO: Av. Inca Garcilaso de la Vega 1337, LC 1094-CC Real Plaza Centro Cìvico – Lima</li>
+											<li>B1 SAN BORJA: Mz I-2 Urb San Borja Lc 233-234 Segundo Piso Cc San Borja Plaza</li>
+											<li>B SALAVERRY: Centro Comercial Real Plaza Salaverry Av. Felipe Santiago Salaverry S/n Int L-415</li>
+											<li>B4 MIRAFLORES: Av. Larco 361 – Miraflores</li>
+											<li>B LARCOMAR: Av. Malecón De La Reserva Nº 610, Int 319, C.C. Larcomar </li>
+											<li>B HUARAZ: Av. Luzuriaga 668</li>
+											<li>B AYACUCHO: Jr. 28 de Julio 228 -220</li>
+											<li>B5 HUANCAYO: CC. Real Plaza Huancayo, Av. Ferrocarril 1035, LC-237-LC-239</li>
+											<li>B4 CUSCO: C.C. Plaza San Antonio, Av. De La Cultura s/n, Lote A, Locales LC-214/216/218</li>
+
+
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="main-logo">
@@ -64,12 +124,48 @@
 					</div>
 
 					<div class="menu">
+						<!--label for="toggle">&#9776;</label>
+						<input type="checkbox" id="toggle"-->
 						<ul id="main_menu">
-							<li><a href="#" id="looks">LOOKS</a></li>
-							<li><a href="#damas">DAMA</a></li>
-							<li><a href="#caballeros">CABALLERO</a></li>
+							<li><a href="javascript:muestraLooks();" id="looks">LOOKS</a></li>
+							<li><a href="#seccion_dama">DAMA</a></li>
+							<li><a href="#seccion_caballero">CABALLERO</a></li>
 							<li><a href="#div_suscribete">SUSCRÍBETE</a></li>
-							<li><a href="#">ENCUÉNTRANOS</a></li>
+							<li>
+								<a data-fancybox data-src="#contenido-tiendas" href="javascript:;">ENCUÉNTRANOS</a>
+								<div style="display:none;"  id="contenido-tiendas">
+									<h2 style="text-align:center;">Bata Red: Tiendas disponibles</h2>
+									<ul id="main_menu_light">
+										<li>B JOCKEY PLAZA: Av. Javier Prado Este 4200 Tda 110 A9/B, Surco- C.C. Jockey Plaza</li>
+										<li>B PRIMAVERA: Av. Angamos Este 2681 Int L 126 CC Real Plaza Primavera - San Borja</li>
+										<li>B MARSANO: Av. Angamos Nº 1803, local LC 37 - Surquillo</li>
+										<li>B1 MIRAFLORES: Av. Larco 662 – Miraflores</li>
+										<li>B5 MIRAFLORES: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
+										<li>B10 AREQUIPA: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
+										<li>B2 LA MOLINA: Av. La Molina 860- La Molina</li>
+										<li>B WOMAN MALL DEL SUR: C.C. Mall Del Sur, Av. Los Lirios N° 301, Local Lcs-1162, 1er. Nivel </li>
+										<li>B WOMAN BELLAVISTA: C.C. Mall Plaza Bellavista, Av. Oscar R. Benavides Nº 3866 Lc: A-1027b y A-1029</li>
+										<li>B CHORRILLOS: Av. Paseo de la República s/n Tda. 129-131-133, Chorrillos CC Plaza Lima Sur Shopping Center</li>
+										<li>B MEGAPLAZA: Av. Alfredo Mendiola 3698 y Av. Industrial 3513 a 3519, Int L-20-21, C.C. Cono Norte Mega Plaza</li>
+										<li>B1 INDEPENDENCIA: Av. Alfredo Mendiola Nº 1400 Locales 106/108/110 CC Plaza Norte</li>
+										<li>B2 SANTA ANITA: Av. Carretera Central 111 LC B-1022 y B-1024 primer nivel Mall Aventura Plaza Santa Anita</li>
+										<li>BATA MALL DEL SUR: Av. Los Lirios 301, Locales LCS 2068-2070, C.C. Mall Del Sur –</li>
+										<li>B2 SAN MIGUEL: CC Plaza San Miguel Tda 59 Av. La Marina Cdra 20 - San Miguel</li>
+										<li>B2 CHORRILLOS: Av. Prol. Paseo de la República s/n Int LC 230-232 CC Plaza Lima Sur – Chorrillos</li>
+										<li>B CENTRO CIVICO: Av. Inca Garcilaso de la Vega 1337, LC 1094-CC Real Plaza Centro Cìvico – Lima</li>
+										<li>B1 SAN BORJA: Mz I-2 Urb San Borja Lc 233-234 Segundo Piso Cc San Borja Plaza</li>
+										<li>B SALAVERRY: Centro Comercial Real Plaza Salaverry Av. Felipe Santiago Salaverry S/n Int L-415</li>
+										<li>B4 MIRAFLORES: Av. Larco 361 – Miraflores</li>
+										<li>B LARCOMAR: Av. Malecón De La Reserva Nº 610, Int 319, C.C. Larcomar </li>
+										<li>B HUARAZ: Av. Luzuriaga 668</li>
+										<li>B AYACUCHO: Jr. 28 de Julio 228 -220</li>
+										<li>B5 HUANCAYO: CC. Real Plaza Huancayo, Av. Ferrocarril 1035, LC-237-LC-239</li>
+										<li>B4 CUSCO: C.C. Plaza San Antonio, Av. De La Cultura s/n, Lote A, Locales LC-214/216/218</li>
+
+
+									</ul>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -80,7 +176,10 @@
 	<div id="texto-animado" class="container-fluid" style="background-color:#fff;">
 		<div class="row" id="texto-animado-fila">
 	        <div class="col-md-12 align-self-center text-center">
-	            <img class="img-fluid" width="50%" src="images/logo.png">
+	            <h1 class="txt_animado">
+	            	Presentamos nuestra colección de calzado elegante
+	            </h1>
+	            <img id="logo_animado" class="img-fluid" width="20%" src="images/logo.png">
 	        </div>
 	    </div>
 	</div>
@@ -90,7 +189,7 @@
 	</div>
 	<img class="img-fluid img-dama" src="images/bata_red_dama_.jpg">
 
-	<div class="container lista-productos" id="damas">
+	<div class="container lista-productos compensate-for-scrollbar" id="seccion_dama">
 		<div class="row text-center">
 			<div class="col-md-4">
 				<div class="row">
@@ -394,7 +493,7 @@
 	<div class="container-fluid suscribete-medio">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<input type="text" placeholder="Suscribete" id="suscribete" /><button>Encuentranos</button>
+				<input type="text" placeholder="Suscribete" id="suscribete" /><button data-fancybox data-src="#contenido-tiendas" >Encuéntranos</button>
 			</div>
 		</div>
 	</div>		
@@ -404,7 +503,7 @@
 	</div>
 	<img class="img-fluid img-caballero" src="images/bata_red_caballeros_.jpg">
 	
-	<div class="container lista-productos" id="caballeros">
+	<div class="container lista-productos" id="seccion_caballero">
 		<div class="row text-center">
 			<div class="col-md-4">
 				<div class="row">
@@ -702,16 +801,40 @@ y a las novedades de la nueva colección Bata Red.</p>
 			$(element).attr("src", imagen);
 		}
 
+		function cambiar(opcion){
+			$.fancybox.close();
+			$(document).scrollTop( $("#seccion_" + opcion).offset().top );  
+			return false;
+		}
+
+		function open_menu(){
+			//alert("ssss");
+		}
+
+		function muestraLooks(){
+			$('#exampleModal').modal('show');
+			$.fancybox.close();
+		}
+
 		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
             event.preventDefault();
             $(this).ekkoLightbox();
         });
 	
 		$("document").ready(function(){
-			$('#main_menu').slicknav();
+			$('[data-fancybox]').fancybox({
+				hideOnContentClick: true,
+				smallBtn:true,
+				helpers: {
+					overlay: {
+						locked: true
+					}
+				}
+  			});
 
 			$("#looks").click(function(){
-				$('#exampleModal').modal('show');
+				//$('#exampleModal').modal('show');
+				//alert("dsfsdf");
 			});
 
 			$("#more_caballeros").hide();
