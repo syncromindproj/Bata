@@ -27,7 +27,7 @@
 }
 
 #contenido-menu, #contenido-tiendas{
-	background-color: rgb(0,0,0,0.5) !important;
+	background-color: rgb(0,0,0,1) !important;
 	color:#fff;
 }
 
@@ -301,9 +301,8 @@ img {
 
 .txt_animado {
 	font-family: MontserratLight;
-	font-size: 45px !important;
-	padding-top: 10px;
-	padding-bottom: 40px;
+	font-size: 30px !important;
+	padding: 10px 35px 40px 35px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -462,7 +461,7 @@ img {
 
 	.txt_animado {
 		font-family: MontserratLight;
-		font-size: 25px !important;
+		font-size: 20px !important;
 		padding-top: 10px;
 	}
 
