@@ -20,14 +20,12 @@
 
 	<div class="header-container">
 		<div class="video-container">
-			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/video2.jpg">
+			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/video.jpg">
 				<source src="assets/video.mp4" type="video/mp4" />
-				<source src="assets/Bed-Phone.webm" type="video/webm" />
-				<source src="assets/Bed-Phone.ogv" type="video/ogg" />
 			</video>
 		</div>
 		<div class="video-container-mobile">
-			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/video2.jpg">
+			<video id="main_video" preload="true" autoplay="autoplay" loop="true" volume="0" poster="assets/video.jpg">
 			</video>
 		</div>
 		<div class="container" id="main">
@@ -42,47 +40,58 @@
 								</div>
 							</div>
 							
-							<ul id="main_menu_light">
-								<li><a href="javascript:muestraLooks();" id="looks">LOOKS</a></li>
-								<li><a href="javascript:cambiar('dama');">DAMA</a></li>
-								<li><a href="javascript:cambiar('caballero');">CABALLERO</a></li>
-								<li><a href="#div_suscribete">SUSCRÍBETE</a></li>
-								<li>
-									<a data-fancybox data-src="#contenido-tiendas" href="javascript:;">ENCUÉNTRANOS</a>
-									<div style="display:none;"  id="contenido-tiendas">
-										<h2 style="text-align:center;">Bata Red: Tiendas disponibles</h2>
-										<ul id="main_menu_light">
-											<li>B JOCKEY PLAZA: Av. Javier Prado Este 4200 Tda 110 A9/B, Surco- C.C. Jockey Plaza</li>
-											<li>B PRIMAVERA: Av. Angamos Este 2681 Int L 126 CC Real Plaza Primavera - San Borja</li>
-											<li>B MARSANO: Av. Angamos Nº 1803, local LC 37 - Surquillo</li>
-											<li>B1 MIRAFLORES: Av. Larco 662 – Miraflores</li>
-											<li>B5 MIRAFLORES: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
-											<li>B10 AREQUIPA: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
-											<li>B2 LA MOLINA: Av. La Molina 860- La Molina</li>
-											<li>B WOMAN MALL DEL SUR: C.C. Mall Del Sur, Av. Los Lirios N° 301, Local Lcs-1162, 1er. Nivel </li>
-											<li>B WOMAN BELLAVISTA: C.C. Mall Plaza Bellavista, Av. Oscar R. Benavides Nº 3866 Lc: A-1027b y A-1029</li>
-											<li>B CHORRILLOS: Av. Paseo de la República s/n Tda. 129-131-133, Chorrillos CC Plaza Lima Sur Shopping Center</li>
-											<li>B MEGAPLAZA: Av. Alfredo Mendiola 3698 y Av. Industrial 3513 a 3519, Int L-20-21, C.C. Cono Norte Mega Plaza</li>
-											<li>B1 INDEPENDENCIA: Av. Alfredo Mendiola Nº 1400 Locales 106/108/110 CC Plaza Norte</li>
-											<li>B2 SANTA ANITA: Av. Carretera Central 111 LC B-1022 y B-1024 primer nivel Mall Aventura Plaza Santa Anita</li>
-											<li>BATA MALL DEL SUR: Av. Los Lirios 301, Locales LCS 2068-2070, C.C. Mall Del Sur –</li>
-											<li>B2 SAN MIGUEL: CC Plaza San Miguel Tda 59 Av. La Marina Cdra 20 - San Miguel</li>
-											<li>B2 CHORRILLOS: Av. Prol. Paseo de la República s/n Int LC 230-232 CC Plaza Lima Sur – Chorrillos</li>
-											<li>B CENTRO CIVICO: Av. Inca Garcilaso de la Vega 1337, LC 1094-CC Real Plaza Centro Cìvico – Lima</li>
-											<li>B1 SAN BORJA: Mz I-2 Urb San Borja Lc 233-234 Segundo Piso Cc San Borja Plaza</li>
-											<li>B SALAVERRY: Centro Comercial Real Plaza Salaverry Av. Felipe Santiago Salaverry S/n Int L-415</li>
-											<li>B4 MIRAFLORES: Av. Larco 361 – Miraflores</li>
-											<li>B LARCOMAR: Av. Malecón De La Reserva Nº 610, Int 319, C.C. Larcomar </li>
-											<li>B HUARAZ: Av. Luzuriaga 668</li>
-											<li>B AYACUCHO: Jr. 28 de Julio 228 -220</li>
-											<li>B5 HUANCAYO: CC. Real Plaza Huancayo, Av. Ferrocarril 1035, LC-237-LC-239</li>
-											<li>B4 CUSCO: C.C. Plaza San Antonio, Av. De La Cultura s/n, Lote A, Locales LC-214/216/218</li>
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<ul id="main_menu_light">
+										<li><a href="javascript:muestraLooks();" id="looks">LOOKS</a></li>
+										<li><a href="javascript:cambiarDama();">DAMA</a></li>
+										<li><a href="javascript:cambiarCaballero();">CABALLERO</a></li>
+										<li><a href="javascript:cambiarSuscribete();">SUSCRÍBETE</a></li>
+										<li>
+											<a data-fancybox data-src="#contenido-tiendas" href="javascript:;">ENCUÉNTRANOS</a>
+											<div style="display:none;"  id="contenido-tiendas">
+												<h2 style="text-align:center;">Bata Red: Tiendas disponibles</h2>
+												<ul id="main_menu_light">
+													<li>B JOCKEY PLAZA: Av. Javier Prado Este 4200 Tda 110 A9/B, Surco- C.C. Jockey Plaza</li>
+													<li>B PRIMAVERA: Av. Angamos Este 2681 Int L 126 CC Real Plaza Primavera - San Borja</li>
+													<li>B MARSANO: Av. Angamos Nº 1803, local LC 37 - Surquillo</li>
+													<li>B1 MIRAFLORES: Av. Larco 662 – Miraflores</li>
+													<li>B5 MIRAFLORES: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
+													<li>B10 AREQUIPA: Av. General Suarez 110 Int. Local Comercial Nº. 2</li>
+													<li>B2 LA MOLINA: Av. La Molina 860- La Molina</li>
+													<li>B WOMAN MALL DEL SUR: C.C. Mall Del Sur, Av. Los Lirios N° 301, Local Lcs-1162, 1er. Nivel </li>
+													<li>B WOMAN BELLAVISTA: C.C. Mall Plaza Bellavista, Av. Oscar R. Benavides Nº 3866 Lc: A-1027b y A-1029</li>
+													<li>B CHORRILLOS: Av. Paseo de la República s/n Tda. 129-131-133, Chorrillos CC Plaza Lima Sur Shopping Center</li>
+													<li>B MEGAPLAZA: Av. Alfredo Mendiola 3698 y Av. Industrial 3513 a 3519, Int L-20-21, C.C. Cono Norte Mega Plaza</li>
+													<li>B1 INDEPENDENCIA: Av. Alfredo Mendiola Nº 1400 Locales 106/108/110 CC Plaza Norte</li>
+													<li>B2 SANTA ANITA: Av. Carretera Central 111 LC B-1022 y B-1024 primer nivel Mall Aventura Plaza Santa Anita</li>
+													<li>BATA MALL DEL SUR: Av. Los Lirios 301, Locales LCS 2068-2070, C.C. Mall Del Sur –</li>
+													<li>B2 SAN MIGUEL: CC Plaza San Miguel Tda 59 Av. La Marina Cdra 20 - San Miguel</li>
+													<li>B2 CHORRILLOS: Av. Prol. Paseo de la República s/n Int LC 230-232 CC Plaza Lima Sur – Chorrillos</li>
+													<li>B CENTRO CIVICO: Av. Inca Garcilaso de la Vega 1337, LC 1094-CC Real Plaza Centro Cìvico – Lima</li>
+													<li>B1 SAN BORJA: Mz I-2 Urb San Borja Lc 233-234 Segundo Piso Cc San Borja Plaza</li>
+													<li>B SALAVERRY: Centro Comercial Real Plaza Salaverry Av. Felipe Santiago Salaverry S/n Int L-415</li>
+													<li>B4 MIRAFLORES: Av. Larco 361 – Miraflores</li>
+													<li>B LARCOMAR: Av. Malecón De La Reserva Nº 610, Int 319, C.C. Larcomar </li>
+													<li>B HUARAZ: Av. Luzuriaga 668</li>
+													<li>B AYACUCHO: Jr. 28 de Julio 228 -220</li>
+													<li>B5 HUANCAYO: CC. Real Plaza Huancayo, Av. Ferrocarril 1035, LC-237-LC-239</li>
+													<li>B4 CUSCO: C.C. Plaza San Antonio, Av. De La Cultura s/n, Lote A, Locales LC-214/216/218</li>
 
 
-										</ul>
-									</div>
-								</li>
-							</ul>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-12 text-center" style="padding-top:20px;">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook-f fa-2x icon-white"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram fa-2x icon-white"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube-play fa-2x icon-white"></i></a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -118,14 +127,12 @@
 						</div>
 						<div class="media-option">
 							<a href="#">
-								<i class="fa fa-youtube fa-2x icon-red"></i>
+								<i class="fa fa-youtube-play fa-2x icon-red"></i>
 							</a>
 						</div>
 					</div>
 
 					<div class="menu">
-						<!--label for="toggle">&#9776;</label>
-						<input type="checkbox" id="toggle"-->
 						<ul id="main_menu">
 							<li><a href="javascript:muestraLooks();" id="looks">LOOKS</a></li>
 							<li><a href="#seccion_dama">DAMA</a></li>
@@ -177,8 +184,7 @@
 		<div class="row" id="texto-animado-fila">
 	        <div class="col-md-12 align-self-center text-center">
 	            <h1 class="txt_animado">
-	            	Ahora la Moda más Comfort está en BATA y se llama BATA RED, lo último
-en tendencia que debes tener
+	            	Ahora el Comfort y la Moda están en Bata, y se llama Bata Red , lo último en tendencia que debes tener.
 	            </h1>
 	            <img id="logo_animado" class="img-fluid" width="20%" src="images/logo.png">
 	        </div>
@@ -186,9 +192,11 @@ en tendencia que debes tener
 	</div>
 
 	<div class="cover-dama" id="seccion_dama">
-		
+		<div class="texto-dama">
+			DAMA
+		</div>
 	</div>
-	<img class="img-fluid img-dama" src="images/bata_red_dama_.jpg"  id="seccion_dama">
+	<img class="img-fluid img-dama" src="images/bata_red_dama_2.jpg"  id="seccion_dama">
 
 	<div class="container lista-productos compensate-for-scrollbar">
 		<div class="row text-center">
@@ -218,7 +226,7 @@ en tendencia que debes tener
 							<small>S/. 159.90</small>	
 							<div class="colores">
 								<a href="#" onclick="CambiarImagen('randy_img', 'images/bata_red_dama/bata_red_dama_0036_randy-black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
-								<a href="#" onclick="CambiarImagen('randy_img', 'images/bata_red_dama/bata_red_dama_0035_randy-light-pink.jpg'); return false;"><img src="assets/btn_rosado.png" /></a>
+								<a href="#" onclick="CambiarImagen('randy_img', 'images/bata_red_dama/bata_red_dama_0035_randy-light-pink.jpg'); return false;"><img src="assets/light-pink.png" /></a>
 							</div>			
 						</div>
 						<img id="randy_img" class="img-fluid" src="images/bata_red_dama/bata_red_dama_0035_randy-light-pink.jpg">
@@ -233,7 +241,7 @@ en tendencia que debes tener
 							<small>S/. 109.90</small>	
 							<div class="colores">
 								<a href="#" onclick="CambiarImagen('reyna_img', 'images/bata_red_dama/bata_red_dama_0026_reyna_black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
-								<a href="#" onclick="CambiarImagen('reyna_img', 'images/bata_red_dama/bata_red_dama_0025_reyna_navy.jpg'); return false;"><img src="assets/btn_celeste.png" /></a>
+								<a href="#" onclick="CambiarImagen('reyna_img', 'images/bata_red_dama/bata_red_dama_0025_reyna_navy.jpg'); return false;"><img src="assets/reyna-old-navy.png" /></a>
 							</div>				
 						</div>
 						<img id="reyna_img" class="img-fluid" src="images/bata_red_dama/bata_red_dama_0025_reyna_navy.jpg">
@@ -268,7 +276,7 @@ en tendencia que debes tener
 							<div class="colores">
 								<a href="#" onclick="CambiarImagen('regina_img', 'images/bata_red_dama/bata_red_dama_0032_regina_black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
 								<a href="#" onclick="CambiarImagen('regina_img', 'images/bata_red_dama/bata_red_dama_0031_regina_light_pink.jpg'); return false;"><img src="assets/btn_rosado.png" /></a>
-								<a href="#" onclick="CambiarImagen('regina_img', 'images/bata_red_dama/bata_red_dama_0030_regina_high_risk_red.jpg'); return false;"><img src="assets/btn_rojo.png" /></a>
+								<a href="#" onclick="CambiarImagen('regina_img', 'images/bata_red_dama/bata_red_dama_0030_regina_high_risk_red.jpg'); return false;"><img src="assets/High-risk-red.png" /></a>
 							</div>				
 						</div>
 						<img id="regina_img" class="img-fluid" src="images/bata_red_dama/bata_red_dama_0032_regina_black.jpg">
@@ -283,7 +291,7 @@ en tendencia que debes tener
 							<small>S/. 129.90</small>	
 							<div class="colores">
 								<a href="#" onclick="CambiarImagen('renata_img', 'images/bata_red_dama/bata_red_dama_0028_renata_black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
-								<a href="#" onclick="CambiarImagen('renata_img', 'images/bata_red_dama/bata_red_dama_0029_renata_gold.jpg'); return false;"><img src="assets/btn_amarillo.png" /></a>
+								<a href="#" onclick="CambiarImagen('renata_img', 'images/bata_red_dama/bata_red_dama_0029_renata_gold.jpg'); return false;"><img src="assets/renata-gold.png" /></a>
 							</div>				
 						</div>
 						<img id="renata_img" class="img-fluid" src="images/bata_red_dama/bata_red_dama_0028_renata_black.jpg">
@@ -301,7 +309,7 @@ en tendencia que debes tener
 								<h4>Ruth</h4><br>
 								<small>S/. 189.90</small>
 								<div class="colores">
-									<a href="#" onclick="CambiarImagen('ruth_img', 'images/bata_red_dama/bata_red_dama_0000_Ruth_summer_taupe.jpg'); return false;"><img src="assets/btn_rosa_claro.png" /></a>
+									<a href="#" onclick="CambiarImagen('ruth_img', 'images/bata_red_dama/bata_red_dama_0000_Ruth_summer_taupe.jpg'); return false;"><img src="assets/ruth-summer-taupe.png" /></a>
 									<a href="#" onclick="CambiarImagen('ruth_img', 'images/bata_red_dama/bata_red_dama_0001_Ruth_black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
 								</div>					
 							</div>
@@ -317,7 +325,7 @@ en tendencia que debes tener
 								<h4>Rubi</h4><br>
 								<small>S/. 139.90</small>
 								<div class="colores">
-									<a href="#" onclick="CambiarImagen('rubi_img', 'images/bata_red_dama/bata_red_dama_0002_Rubi_tan.jpg'); return false;"><img src="assets/btn_rojo.png" /></a>
+									<a href="#" onclick="CambiarImagen('rubi_img', 'images/bata_red_dama/bata_red_dama_0002_Rubi_tan.jpg'); return false;"><img src="assets/rubi-tan.png" /></a>
 									<a href="#" onclick="CambiarImagen('rubi_img', 'images/bata_red_dama/bata_red_dama_0003_Rubi_black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
 								</div>					
 							</div>
@@ -332,7 +340,7 @@ en tendencia que debes tener
 								<h4>Rowena</h4><br>
 								<small>S/. 139.90</small>
 								<div class="colores">
-									<a href="#" onclick="CambiarImagen('rowena_img', 'images/bata_red_dama/bata_red_dama_0008_rowena_tan.jpg'); return false;"><img src="assets/btn_marron.png" /></a>
+									<a href="#" onclick="CambiarImagen('rowena_img', 'images/bata_red_dama/bata_red_dama_0008_rowena_tan.jpg'); return false;"><img src="assets/rowena-tan.png" /></a>
 									<a href="#" onclick="CambiarImagen('rowena_img', 'images/bata_red_dama/bata_red_dama_0009_rowena_black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
 								</div>					
 							</div>
@@ -349,7 +357,7 @@ en tendencia que debes tener
 								<h4>Rosemary</h4><br>
 								<small>S/. 189.90</small>
 								<div class="colores">
-									<a href="#" onclick="CambiarImagen('rosemary_img', 'images/bata_red_dama/bata_red_dama_0010_rosemary_taupe.jpg'); return false;"><img src="assets/btn_crema.png" /></a>
+									<a href="#" onclick="CambiarImagen('rosemary_img', 'images/bata_red_dama/bata_red_dama_0010_rosemary_taupe.jpg'); return false;"><img src="assets/rosemary-taupe.png" /></a>
 									<a href="#" onclick="CambiarImagen('rosemary_img', 'images/bata_red_dama/bata_red_dama_0011_rosemary_black.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
 								</div>					
 							</div>
@@ -443,7 +451,7 @@ en tendencia que debes tener
 								<h4>Rihanna</h4><br>
 								<small>S/. 189.90</small>
 								<div class="colores">
-									<a href="#" onclick="CambiarImagen('rihanna_img', 'images/bata_red_dama/bata_red_dama_0023_rihanna_taupe.jpg'); return false;"><img src="assets/btn_crema.png" /></a>
+									<a href="#" onclick="CambiarImagen('rihanna_img', 'images/bata_red_dama/bata_red_dama_0023_rihanna_taupe.jpg'); return false;"><img src="assets/rihana-taupe.png" /></a>
 									<a href="#" onclick="CambiarImagen('rihanna_img', 'images/bata_red_dama/bata_red_dama_0024_rihanna_black_pu.jpg'); return false;"><img src="assets/btn_gris.png" /></a>
 								</div>					
 							</div>
@@ -493,16 +501,19 @@ en tendencia que debes tener
 
 	<div class="container-fluid suscribete-medio">
 		<div class="row">
-			<div class="col-md-12 text-center">
-				<input type="text" placeholder="Suscribete" id="suscribete" /><button data-fancybox data-src="#contenido-tiendas" >Encuéntranos</button>
+			<div class="col-md-12 text-center" style="padding-top:20px;">
+				<button data-fancybox data-src="#contenido-tiendas" >Encuéntranos</button>
 			</div>
 		</div>
 	</div>		
 
 	<div class="cover-caballero" id="seccion_caballero">
-		
+		<div class="texto-caballero">
+			CABALLERO
+		</div>
 	</div>
-	<img class="img-fluid img-caballero" src="images/bata_red_caballeros_.jpg">
+	
+	<!--img class="img-fluid img-caballero" src="images/bata_red_caballeros_2.jpg"-->
 	
 	<div class="container lista-productos">
 		<div class="row text-center">
@@ -625,7 +636,7 @@ en tendencia que debes tener
 							<h4>Alex</h4><br>
 							<small>S/. 139.90</small>
 							<div class="colores">
-								<a href="#" onclick="CambiarImagen('alex_img', 'images/bata_red_caballero/bata_red_caballeros_0013_alex_beige.jpg'); return false;"><img src="assets/btn_cafe.png" /></a>
+								<a href="#" onclick="CambiarImagen('alex_img', 'images/bata_red_caballero/bata_red_caballeros_0013_alex_beige.jpg'); return false;"><img src="assets/Alex-beige.png" /></a>
 								<a href="#" onclick="CambiarImagen('alex_img', 'images/bata_red_caballero/bata_red_caballeros_0012_alex_blue.jpg'); return false;"><img src="assets/btn_azul_alex.png" /></a>
 							</div>					
 						</div>
@@ -662,26 +673,33 @@ en tendencia que debes tener
 				<p class="p_suscribete">Suscríbete aquí y accede a las promociones<br>
 y a las novedades de la nueva colección Bata Red.</p>
 			</div>
-			<div class="col-md-12 text-center">
-				<input type="text" placeholder="Suscribete" id="suscribete" /><button>Enviar</button>
+			<div class="col-md-12 text-center" id="alerta2" style="color:red; font-size:11px;padding-bottom:5px; display:none;">
+				* Debe aceptar las políticas para poder suscribirse.
 			</div>
 			<div class="col-md-12 text-center">
-				<p class="p_condiciones">*Acepto recibir información acerca de productos, servicios, lanzamientos, ofertas, promociones, concursos y contenidos de BATA PERÚ. <input type="checkbox" id="chk_condiciones1" /><br>
-** He leído y acepto la Política de Privacidad y de Protección de Datos Personales que se encuentran en:<br> https://www.bata.com.pe/content/13-politica-de-privacidad-y-seguridad <input type="checkbox" id="chk_condiciones2" /></p>
+				<input type="text" placeholder="Email" class="txt_suscribete" id="suscribete" /><button id="btn_enviar">Enviar</button>
+			</div>
+			<div class="col-md-12 text-center">
+				<p class="p_condiciones"><input name="chk[]" type="checkbox" id="chk_condiciones1" /> *Acepto recibir información acerca de productos, servicios, lanzamientos, ofertas, promociones, concursos y contenidos de BATA PERÚ. <br>
+<input type="checkbox" id="chk_condiciones2" name="chk[]" /> ** He leído y acepto la Política de Privacidad y de Protección de Datos Personales que se encuentran en:<br> https://www.bata.com.pe/content/13-politica-de-privacidad-y-seguridad </p>
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid footer">
 		<div class="row" style="padding-top:15px;">
-			<div class="col-md-4 text-center">
+			<div class="col-md-4 col-sm-12 text-center">
 				
 			</div>
-			<div class="col-md-4 text-center">
+			<div class="col-md-4 col-sm-12 text-center">
 				<a href="#">www.bata.com.pe</a>				
 			</div>
-			<div class="col-md-4 text-center">
-				
+			<div class="col-md-4 col-sm-12 text-center">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook-f fa-1x icon-white"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram fa-1x icon-white"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play fa-1x icon-white"></i></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -802,10 +820,19 @@ y a las novedades de la nueva colección Bata Red.</p>
 			$(element).attr("src", imagen);
 		}
 
-		function cambiar(opcion){
-			$.fancybox.close();
-			$(document).scrollTop( $("#seccion_" + opcion).offset().top );  
-			return false;
+		function cambiarDama(){
+			$(document).scrollTop( $("#seccion_dama").offset().top );  
+			$(".fancybox-container").hide();
+		}
+
+		function cambiarCaballero(){
+			$(document).scrollTop( $("#seccion_caballero").offset().top );  
+			$(".fancybox-container").hide();
+		}
+
+		function cambiarSuscribete(){
+			$(document).scrollTop( $("#div_suscribete").offset().top );  
+			$(".fancybox-container").hide();
 		}
 
 		function open_menu(){
@@ -819,7 +846,9 @@ y a las novedades de la nueva colección Bata Red.</p>
 
 		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
             event.preventDefault();
-            $(this).ekkoLightbox();
+            $(this).ekkoLightbox({
+            	 alwaysShowClose: true
+            });
         });
 	
 		$("document").ready(function(){
@@ -828,15 +857,23 @@ y a las novedades de la nueva colección Bata Red.</p>
 				smallBtn:true,
 				helpers: {
 					overlay: {
-						locked: true
+						locked: false
 					}
 				}
   			});
 
-			$("#looks").click(function(){
-				//$('#exampleModal').modal('show');
-				//alert("dsfsdf");
-			});
+  			$("#btn_enviar").click(function(){
+				var condiciones = $('input[name="chk[]"]:checked').length > 1;
+				if (!condiciones) {
+					$(".txt_suscribete").css("border", "1px solid red");
+					$(".txt_suscribete").css("background-color", "#FCA6A6");
+					$("#alerta2").show();
+				}else{
+					$(".txt_suscribete").css("border", "1px solid #f6f6f6");
+					$(".txt_suscribete").css("background-color", "#f6f6f6");
+					$("#alerta2").hide();
+				}
+  			});
 
 			$("#more_caballeros").hide();
 			$("#more_damas").hide();

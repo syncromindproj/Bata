@@ -18,6 +18,20 @@
     src: url("../fonts/Montserrat-SemiBold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: MontserratSemiBoldItalic;
+    src: url("../fonts/Montserrat-SemiBoldItalic.otf") format("opentype");
+}
+
+.modal-header{
+	background-color: #65040C !important;
+}
+
+.close{
+	color:#fff !important;
+	opacity: 1 !important;
+}
+
 .fancybox-content{
 	background-color: rgb(0,0,0,0.5) !important;
 }
@@ -94,6 +108,9 @@ li{
 }
 
 
+.icon-white{
+	color: #fff
+}
 
 .icon-red{
 	padding-right: 20px;
@@ -187,7 +204,7 @@ small{
 
 button{
 	background-color: #f6f6f6;
-	border:1px solid #000;
+	border:1px solid #A5A5A5;
 	padding: 9px 30px 9px 30px;
 	cursor: pointer;
 }
@@ -208,6 +225,15 @@ button:hover{
 }
 
 #suscribete{
+	background-color: #f6f6f6;
+	border: 1px solid #f6f6f6;
+	width: 350px;
+	padding: 5px 0px 5px 15px;
+	margin-right: 10px;
+	height: 45px;
+}
+
+#txt_email{
 	background-color: #f6f6f6;
 	border: 1px solid #f6f6f6;
 	width: 350px;
@@ -279,6 +305,7 @@ img {
 
 .modal-body{
 	padding: 0px !important;
+	background-color: #A91022;
 }
 
 .cover-dama{
@@ -287,7 +314,18 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 1080px;
+    /*min-height: 1080px;*/
+    min-height: 350px;
+    position: relative;
+}
+
+.texto-dama, .texto-caballero{
+	font-family: MontserratSemiBoldItalic;
+	font-size: 55px;
+	position: absolute;
+	color: #fff;
+	right: 50px;
+	bottom: 20px;
 }
 
 .cover-caballero{
@@ -296,7 +334,9 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 1080px;
+    /*min-height: 1080px;*/
+    min-height: 350px;
+    position: relative;
 }
 
 .txt_animado {
@@ -379,19 +419,26 @@ img {
 	.cover-dama{
 		background-image: url("../images/bata_red_dama_.jpg");
 		background-attachment: scroll;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    min-height: 500px;
+	    background-position: center top;
+	    background-size:100% auto;
+	    min-height: 460px;
+	}
+
+	.cover-caballero{
+		background-image: url("../images/bata_red_caballeros_.jpg");
+		background-attachment: scroll;
+	    background-position: center top;
+	    background-size:100% auto;
+	    min-height: 460px;
 	}
 
 	.cover-caballero, 
 	.cover-dama{
-		display: none;
+		/*display: none;*/
 	}
 
 	.img-caballero,
-	.img-dama
+	.img-dama,
 	{
 		display: block;
 	}
@@ -421,7 +468,84 @@ img {
 
 }
 
+@media only screen and (max-width: 400px) {
+	.cover-dama{
+		background-image: url("../images/bata_red_dama_.jpg");
+		background-attachment: scroll;
+	    background-position: center top;
+	    background-size:100% auto;
+	    min-height: 260px !important;
+	}
+
+	.cover-caballero{
+		background-image: url("../images/bata_red_caballeros_.jpg");
+		background-attachment: scroll;
+	    background-position: center top;
+	    background-size:100% auto;
+	    min-height: 260px !important;
+	}
+
+	.texto-dama, .texto-caballero {
+	    font-family: MontserratSemiBoldItalic;
+	    font-size: 25px;
+	    position: absolute;
+	    color: #fff;
+	    right: 20px;
+	    margin-bottom: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.cover-dama{
+		background-image: url("../images/bata_red_dama_.jpg");
+		background-attachment: scroll;
+	    background-position: center top;
+	    background-size:100% auto;
+	}
+
+	.cover-caballero{
+		background-image: url("../images/bata_red_caballeros_.jpg");
+		background-attachment: scroll;
+	    background-position: center top;
+	    background-size:100% auto;
+	}
+
+	.texto-dama, .texto-caballero {
+	    font-family: MontserratSemiBoldItalic;
+	    font-size: 25px;
+	    position: absolute;
+	    color: #fff;
+	    right: 20px;
+	    bottom: 30px !important;
+	}
+}
+
 @media only screen and (max-width: 767px) {
+	.cover-dama{
+		background-image: url("../images/bata_red_dama_.jpg");
+		background-attachment: scroll;
+	    background-position: center top;
+	    background-size:100% auto;
+	    min-height: 260px;
+	}
+
+	.cover-caballero{
+		background-image: url("../images/bata_red_caballeros_.jpg");
+		background-attachment: scroll;
+	    background-position: center top;
+	    background-size:100% auto;
+	    min-height: 260px;
+	}
+
+	.texto-dama, .texto-caballero {
+	    font-family: MontserratSemiBoldItalic;
+	    font-size: 25px;
+	    position: absolute;
+	    color: #fff;
+	    right: 20px;
+	    bottom: 10px;
+	}
+
 	.video-container-mobile{
 		display: block;
 		position: absolute;
@@ -514,6 +638,15 @@ img {
 	}
 
 	#suscribete{
+		background-color: #f6f6f6;
+		border: 1px solid #f6f6f6;
+		width: 250px;
+		padding: 5px 0px 5px 15px;
+		margin-right: 10px;
+		height: 45px;
+	}
+
+	#txt_email{
 		background-color: #f6f6f6;
 		border: 1px solid #f6f6f6;
 		width: 250px;
